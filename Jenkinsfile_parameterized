@@ -24,7 +24,7 @@ pipeline {
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "ncodeit-helloworld"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "nexus_credentials"
+        NEXUS_CREDENTIAL_ID = "Nexus_server"
     }
     stages {
         stage("clone code") {
@@ -32,7 +32,7 @@ pipeline {
                 script {
                     
 				    // Let's clone the source
-                    git branch: "${params.BRANCH}", url: 'https://github.com/betawins/parametirize-job.git';
+                    git branch: "${params.BRANCH}", url: 'https://github.com/sripriya7-ande/spring3-mvc-maven-xml-hello-world-1.git';
                    
                 } 
             }
